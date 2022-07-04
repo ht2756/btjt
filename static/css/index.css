@@ -1,11 +1,178 @@
-@import url("./reset.css");
-*{
-    margin: 0;
-    padding: 0;
+.head {
+    width: 100%;
+    height: .66rem;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.content {
+    width: 100%;
+    background: #F7F7F7;
+    padding-top: .66rem;
+    padding-bottom: 1.66rem;
+}
+.banner { 
+    width: 7.02rem;
+    height: 2.40rem;
+    background: red;
+    border-radius: .27rem;
+    margin: .33rem auto 0;
+}
+.phone-box {
+    width: 7.02rem;
+    height: 1.40rem;
+    background: #fff;
+    border-radius: .27rem;
+    margin: .41rem auto 0;
+}
+.avatar {
+    width: .80rem;
+    height: .80rem;
+    background: gray;
+    margin: .3rem .2rem .3rem .3rem;
+    border-radius: 50%;
+    float:left;
+}
+.phone { 
+    height: .24rem;
+    font-size: .32rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: .20rem;
+    float:left;
+    margin-top: .58rem;
+}
+.price-botton {
+    width: 1.8rem;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+    background: #D0121B;
+    border-radius: .3rem;
+    float: right;
+    margin: .4rem .25rem 0 0;
+    color: #fff;
+}
+.chepai {
+    width: 7.02rem;
+    height: 3.54rem;
+    background: #FFFFFF;
+    border-radius: .27rem;
+    margin: .21rem auto 0;
+    overflow: hidden;
+}
+.chepai-title{
+    width: 6.55rem;
+    height: .32rem;
+    line-height: .32rem;
+    font-weight: bold;
+    color: #333333;
+    margin: .3rem 0 0 .3rem;
+}
+.chepai-title .tit{
+    font-size: .21rem;
+    font-weight: 400;
+    color: #D0121B;
+    float: right;
+}
+.chepai-box {
+    width: 6.55rem;
+    height: 1.07rem;
+    margin: .4rem auto 0;
+    border: .01rem solid #FFC9CC;
+    border-radius: .07rem;
+}
+.chepai-search {
+    width: 2.40rem;
+    height: .68rem;
+    line-height: .68rem;
+    background: #D0121B;
+    border-radius: .34rem;
+    margin: .4rem auto 0;
+    font-size: .26rem;
+    text-align: center;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.apply-box {
+    width: 7.02rem;
+    margin: .27rem auto;
+}
+.apply-item {
+    width: 3.41rem;
+    height: 1.4rem;
+    float: left;
+}
+.apply-item p.word{
+    margin: .31rem 0 .13rem .27rem;
+    height: .32rem;
+    line-height: .32prem;
+    font-size: .32rem;
+    font-weight: bold;
+}
+.apply-item p.detail{
+    height: .24rem;
+    line-height: .24rem;
+    font-size: .24rem;
+    font-weight: 400;
+    margin-left: .27rem;
+}
+.i1 {
+    color: #636F89;
+    background-image: url(../images/index/i1.png);
+    margin-right: .2rem;
+    margin-bottom: .19rem;
+}
+.i1 p.detail{
+    color: #8D9AB5;
+}
+.i2 {
+    color: #498171;
+    background-image: url(../images/index/i2.png);
+    margin-bottom: .19rem;
+}
+.i2 p.detail{
+    color: #91C9B9;
+}
+.i3 {
+    color: #856348;
+    background-image: url(../images/index/i3.png);
+    margin-right: .2rem;
+}
+.i3 p.detail{
+    color: #D3BBA8;
+}
+.i4 {
+    color: #D0121B;
+    background-image: url(../images/index/i3.png);
+}
+.i4 p.detail{
+    color: #EF8F94;
+}
+.recommend {
+    width: 7.02rem;
+    margin: .39rem auto .6rem;
+}
+.recommend .title {
+    height: .32rem;
+    line-height: .32rem;
+    font-size: .32rem;
+    font-weight: bold;
+    color: #333333;
+}
+.recommend-banner {
+    width: 7.02rem;
+    height: 2.4rem;
+    margin: .27rem auto 0;
+    border-radius: .27rem;
+    background: red;
 }
 
-body{
-    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
-    margin: 0 auto;
-    width: 100vw;
-}
+
+
+
+
+
+
+

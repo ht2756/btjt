@@ -7,14 +7,15 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="static/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/common.css" />
     <link rel="stylesheet" type="text/css" href="static/css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/index.css"/>
     <script src="static/js/adv.js"></script>
     <script>
         // 设计图宽度
         window['adaptive'].desinWidth = 750;
         // body 字体大小 会将body字体大小设置为 baseFont / 100 + 'rem'  750的设计图一般设置为28,640的设计图一般设置为24
-        window['adaptive'].baseFont = 28;
+        window['adaptive'].baseFont = 28 ;
         // 显示最大宽度 可选
         window['adaptive'].maxWidth = 750;
         // 初始化
@@ -22,9 +23,50 @@
     </script>
 </head>
 <body>
-<div class=" ">
+<div class="head"></div>
+<div class="content">
+    <div class="banner"></div>
+    <div class="phone-box clearfloat">
+        <div class="avatar"></div>
+        <div class="phone">186******90</div>
+        <div class="price-botton">月租缴费</div>
+    </div>
+    <div class="chepai">
+        <div class="chepai-title">
+            <span>请输入车牌</span>
+            <span class="tit">无牌车缴费</span>
+        </div>
+        <div class="chepai-box">
+
+        </div>
+        <div class="chepai-search">查询停车费</div>
+    </div>
+    <div class="apply-box clearfloat">
+        <div class="apply-item i1">
+            <p class="word">呼叫客服</p>
+            <p class="detail">查看详情</p>
+        </div>
+        <div class="apply-item i2">
+            <p class="word">充电洗车</p>
+            <p class="detail">查看详情</p>
+        </div>
+        <div class="apply-item i3">
+            <p class="word">车位预约</p>
+            <p class="detail">查看详情</p>
+        </div>
+        <div class="apply-item i4">
+            <p class="word">车主商圈</p>
+            <p class="detail">查看详情</p>
+        </div>
+    </div>
+    <div class="recommend">
+        <div class="title">推荐</div>
+        <div class="recommend-banner"></div>
+    </div>
 </div>
+<div id="bottom-bar" class="clearfloat"></div>
 <script src="static/js/jquery.min.js" ></script>
+<script src="static/components/bottom.js" ></script>
 <!-- <script src="static/js/echart.js" ></script> -->
 <!-- <script src="static/js/lazy.js" ></script> -->
 <script>
