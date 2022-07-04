@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/animate.css"/>
+    <script src="static/js/adv.js"></script>
+    <script>
+        // 设计图宽度
+        window['adaptive'].desinWidth = 750;
+        // body 字体大小 会将body字体大小设置为 baseFont / 100 + 'rem'  750的设计图一般设置为28,640的设计图一般设置为24
+        window['adaptive'].baseFont = 28;
+        // 显示最大宽度 可选
+        window['adaptive'].maxWidth = 750;
+        // 初始化
+        window['adaptive'].init();
+    </script>
+</head>
+<body>
+<div class=" ">
+</div>
+<script src="static/js/jquery.min.js" ></script>
+<!-- <script src="static/js/echart.js" ></script> -->
+<!-- <script src="static/js/lazy.js" ></script> -->
+<script>
+    $(document).ready(function(){
+        $('#footer').load('./static/components/footer.html')
+    })
+</script>
+</body>
+</html>
