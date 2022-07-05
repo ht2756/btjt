@@ -1,76 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="static/css/common.css" />
-    <link rel="stylesheet" type="text/css" href="static/css/animate.css"/>
-    <link rel="stylesheet" type="text/css" href="static/css/index.css"/>
-    <script src="static/js/adv.js"></script>
-    <script>
-        // 设计图宽度
-        window['adaptive'].desinWidth = 750;
-        // body 字体大小 会将body字体大小设置为 baseFont / 100 + 'rem'  750的设计图一般设置为28,640的设计图一般设置为24
-        window['adaptive'].baseFont = 28 ;
-        // 显示最大宽度 可选
-        window['adaptive'].maxWidth = 750;
-        // 初始化
-        window['adaptive'].init();
-    </script>
-</head>
-<body>
-<div class="head"></div>
-<div class="content">
-    <div class="banner"></div>
-    <div class="phone-box clearfloat">
-        <div class="avatar"></div>
-        <div class="phone">186******90</div>
-        <div class="price-botton">月租缴费</div>
-    </div>
-    <div class="chepai">
-        <div class="chepai-title">
-            <span>请输入车牌</span>
-            <span class="tit">无牌车缴费</span>
-        </div>
-        <div class="chepai-box">
 
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="static/css/common.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/animate.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/index.css" />
+        <script src="static/js/adv.js"></script>
+        <script>
+            // 设计图宽度
+    window['adaptive'].desinWidth = 750;
+    // body 字体大小 会将body字体大小设置为 baseFont / 100 + 'rem'  750的设计图一般设置为28,640的设计图一般设置为24
+    window['adaptive'].baseFont = 28 ;
+    // 显示最大宽度 可选
+    window['adaptive'].maxWidth = 750;
+    // 初始化
+    window['adaptive'].init();
+        </script>
+    </head>
+
+    <body>
+        <div class="head"></div>
+        <div class="content">
+            <div class="banner"></div>
+            <div class="phone-box clearfloat">
+                <div class="avatar"></div>
+                <div class="phone">186******90</div>
+                <div class="price-botton">月租缴费</div>
+            </div>
+            <div class="chepai">
+                <div class="chepai-title">
+                    <span>请输入车牌</span>
+                    <span class="tit">无牌车缴费</span>
+                </div>
+                <div class="chepai-box clearfloat">
+                    <div class="carcodeBox">
+                        <div class="carLicenseMain">
+                            <ul id="chepaiUl">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li id="xinengyuanLi" class="hide"></li>
+                            </ul>
+                            <!-- <input type="text" id="carinput"/> -->
+                        </div>
+                    </div>
+                    <div class="xinnengyuan" id="xinnengyuan">+新能源</div>
+                </div>
+                <div class="chepai-search">查询停车费</div>
+            </div>
+            <div class="apply-box clearfloat">
+                <div class="apply-item i1">
+                    <p class="word">呼叫客服</p>
+                    <p class="detail">查看详情</p>
+                </div>
+                <div class="apply-item i2">
+                    <p class="word">充电洗车</p>
+                    <p class="detail">查看详情</p>
+                </div>
+                <div class="apply-item i3">
+                    <p class="word">车位预约</p>
+                    <p class="detail">查看详情</p>
+                </div>
+                <div class="apply-item i4">
+                    <p class="word">车主商圈</p>
+                    <p class="detail">查看详情</p>
+                </div>
+            </div>
+            <div class="recommend">
+                <div class="title">推荐</div>
+                <div class="recommend-banner"></div>
+            </div>
         </div>
-        <div class="chepai-search">查询停车费</div>
-    </div>
-    <div class="apply-box clearfloat">
-        <div class="apply-item i1">
-            <p class="word">呼叫客服</p>
-            <p class="detail">查看详情</p>
+        <div id="bottom-bar" class="clearfloat"></div>
+
+        <div class="keyboardBox">
+            <div class="provienceBox" id="textJtBoxs">
+                <ul>
+                    <li>京</li>
+                    <li>津</li>
+                    <li>渝</li>
+                    <li>沪</li>
+                    <li>冀</li>
+                    <li>晋</li>
+                    <li>辽</li>
+                    <li>吉</li>
+                    <li>黑</li>
+                    <li>苏</li>
+                    <li>浙</li>
+                    <li>皖</li>
+                    <li>闽</li>
+                    <li>赣</li>
+                    <li>鲁</li>
+                    <li>豫</li>
+                    <li>鄂</li>
+                    <li>湘</li>
+                    <li>粤</li>
+                    <li>琼</li>
+                    <li>川</li>
+                    <li>贵</li>
+                    <li>云</li>
+                    <li>陕</li>
+                    <li>甘</li>
+                    <li>青</li>
+                    <li>蒙</li>
+                    <li>桂</li>
+                    <li>宁</li>
+                    <li>新</li>
+                    <li>藏</li>
+                    <li>使</li>
+                    <li>领</li>
+                    <li>警</li>
+                    <li>学</li>
+                    <li>港</li>
+                    <li>澳</li>
+                    <li class="changeContentBtn" datas="en">ABC</li>
+                    <li class="deleteBtn" datas="delete">删除</li>
+                </ul>
+            </div>
+            <div class="provienceBox" id="textEnBox">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>0</li>
+                    <li>Q</li>
+                    <li>W</li>
+                    <li>E</li>
+                    <li>R</li>
+                    <li>T</li>
+                    <li>Y</li>
+                    <li>U</li>
+                    <li>I</li>
+                    <li>O</li>
+                    <li>P</li>
+                    <li>A</li>
+                    <li>S</li>
+                    <li>D</li>
+                    <li>F</li>
+                    <li>G</li>
+                    <li>H</li>
+                    <li>J</li>
+                    <li>K</li>
+                    <li>L</li>
+                    <li>Z</li>
+                    <li>X</li>
+                    <li>C</li>
+                    <li>V</li>
+                    <li>B</li>
+                    <li>N</li>
+                    <li>M</li>
+                    <li class="changeContentBtn" datas="jt">中</li>
+                    <li class="deleteBtn other" datas="delete">删除</li>
+                </ul>
+            </div>
         </div>
-        <div class="apply-item i2">
-            <p class="word">充电洗车</p>
-            <p class="detail">查看详情</p>
-        </div>
-        <div class="apply-item i3">
-            <p class="word">车位预约</p>
-            <p class="detail">查看详情</p>
-        </div>
-        <div class="apply-item i4">
-            <p class="word">车主商圈</p>
-            <p class="detail">查看详情</p>
-        </div>
-    </div>
-    <div class="recommend">
-        <div class="title">推荐</div>
-        <div class="recommend-banner"></div>
-    </div>
-</div>
-<div id="bottom-bar" class="clearfloat"></div>
-<script src="static/js/jquery.min.js" ></script>
-<script src="static/components/bottom.js" ></script>
-<!-- <script src="static/js/echart.js" ></script> -->
-<!-- <script src="static/js/lazy.js" ></script> -->
-<script>
-    
-</script>
-</body>
-</html>
+        <script src="static/js/jquery.min.js"></script>
+        <script src="static/components/bottom.js"></script>
+        <script src="static/js/chepai.js"></script>
+        <!-- <script src="static/js/echart.js" ></script> -->
+        <!-- <script src="static/js/lazy.js" ></script> -->
+        <script>
+
+        </script>
+    </body>
+
+    </html>

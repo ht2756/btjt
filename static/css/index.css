@@ -6,19 +6,22 @@
     top: 0;
     left: 0;
 }
+
 .content {
     width: 100%;
     background: #F7F7F7;
     padding-top: .66rem;
     padding-bottom: 1.66rem;
 }
-.banner { 
+
+.banner {
     width: 7.02rem;
     height: 2.40rem;
     background: red;
     border-radius: .27rem;
     margin: .33rem auto 0;
 }
+
 .phone-box {
     width: 7.02rem;
     height: 1.40rem;
@@ -26,23 +29,26 @@
     border-radius: .27rem;
     margin: .41rem auto 0;
 }
+
 .avatar {
     width: .80rem;
     height: .80rem;
     background: gray;
     margin: .3rem .2rem .3rem .3rem;
     border-radius: 50%;
-    float:left;
+    float: left;
 }
-.phone { 
+
+.phone {
     height: .24rem;
     font-size: .32rem;
     font-weight: bold;
     color: #333333;
     line-height: .20rem;
-    float:left;
+    float: left;
     margin-top: .58rem;
 }
+
 .price-botton {
     width: 1.8rem;
     height: .6rem;
@@ -54,6 +60,7 @@
     margin: .4rem .25rem 0 0;
     color: #fff;
 }
+
 .chepai {
     width: 7.02rem;
     height: 3.54rem;
@@ -62,7 +69,8 @@
     margin: .21rem auto 0;
     overflow: hidden;
 }
-.chepai-title{
+
+.chepai-title {
     width: 6.55rem;
     height: .32rem;
     line-height: .32rem;
@@ -70,12 +78,14 @@
     color: #333333;
     margin: .3rem 0 0 .3rem;
 }
-.chepai-title .tit{
+
+.chepai-title .tit {
     font-size: .21rem;
     font-weight: 400;
     color: #D0121B;
     float: right;
 }
+
 .chepai-box {
     width: 6.55rem;
     height: 1.07rem;
@@ -83,6 +93,7 @@
     border: .01rem solid #FFC9CC;
     border-radius: .07rem;
 }
+
 .chepai-search {
     width: 2.40rem;
     height: .68rem;
@@ -95,65 +106,93 @@
     font-weight: 500;
     color: #FFFFFF;
 }
+
+.xinnengyuan {
+    width: 1.2rem;
+    height: .60rem;
+    line-height: .60rem;
+    text-align: center;
+    background: #D0121B;
+    border: .01rem solid #FFC9CC;
+    border-radius: .07rem;
+    float: right;
+    margin: .23rem .2rem 0 0;
+    font-size: .22rem;
+    color: #fff;
+}
+
 .apply-box {
     width: 7.02rem;
     margin: .27rem auto;
 }
+
 .apply-item {
     width: 3.41rem;
     height: 1.4rem;
     float: left;
 }
-.apply-item p.word{
+
+.apply-item p.word {
     margin: .31rem 0 .13rem .27rem;
     height: .32rem;
     line-height: .32prem;
     font-size: .32rem;
     font-weight: bold;
 }
-.apply-item p.detail{
+
+.apply-item p.detail {
     height: .24rem;
     line-height: .24rem;
     font-size: .24rem;
     font-weight: 400;
     margin-left: .27rem;
 }
+
 .i1 {
     color: #636F89;
     background-image: url(../images/index/i1.png);
     margin-right: .2rem;
     margin-bottom: .19rem;
 }
-.i1 p.detail{
+
+.i1 p.detail {
     color: #8D9AB5;
 }
+
 .i2 {
     color: #498171;
     background-image: url(../images/index/i2.png);
     margin-bottom: .19rem;
 }
-.i2 p.detail{
+
+.i2 p.detail {
     color: #91C9B9;
 }
+
 .i3 {
     color: #856348;
     background-image: url(../images/index/i3.png);
     margin-right: .2rem;
 }
-.i3 p.detail{
+
+.i3 p.detail {
     color: #D3BBA8;
 }
+
 .i4 {
     color: #D0121B;
     background-image: url(../images/index/i3.png);
 }
-.i4 p.detail{
+
+.i4 p.detail {
     color: #EF8F94;
 }
+
 .recommend {
     width: 7.02rem;
     margin: .39rem auto .6rem;
 }
+
 .recommend .title {
     height: .32rem;
     line-height: .32rem;
@@ -161,6 +200,7 @@
     font-weight: bold;
     color: #333333;
 }
+
 .recommend-banner {
     width: 7.02rem;
     height: 2.4rem;
@@ -176,3 +216,117 @@
 
 
 
+
+
+
+
+.carcodeBox {
+    width: 100vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carcodeBox ul {
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.carcodeBox ul li {
+    list-style: none;
+}
+
+.carLicenseMain ul {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    float: left;
+    margin: .23rem 0 0 .13rem;
+    position: relative;
+}
+
+.carLicenseMain ul::before {
+    content: '·';
+    font-size: .05rem;
+    position: absolute;
+    top: .17rem;
+    left: 1.21rem;
+
+}
+
+.carLicenseMain ul li {
+    width: .43rem;
+    height: .6rem;
+    box-sizing: border-box;
+    border-bottom: .01rem solid #E4E4E4;
+    display: inline-block;
+    line-height: .6rem;
+    font-size: .32rem;
+    font-weight: 800;
+    color: #333333;
+    text-align: center;
+    margin-right: .25rem;
+}
+
+.carLicenseMain ul li:nth-last-child(1) {
+    margin-right: none;
+}
+
+/* .carLicenseMain ul li:nth-last-child(1){border: 2px dashed #00b520;} */
+.carLicenseMain ul li.active {
+    border-bottom: 1px solid #D0121B;
+}
+
+/* .keyboardBox{position: absolute;z-index: 10;width: 7.5rem;bottom: 0;left: 0;}
+.provienceBox{background: #D0D5D9;padding: 0.5rem 0.5rem;padding-top: .03rem;border-radius: .05rem;box-shadow: .05rem .05rem .1rem #9e9e9e;}
+.provienceBox ul li{display: inline-block;width: .38rem;height: .38rem;line-height: .38rem;background: #fff;margin: .05rem .03rem;text-align: center;
+cursor: pointer;font-size: .14rem;border-radius: .05rem;box-shadow: .02rem .02rem .03rem #979797;}
+.provienceBox ul li.deleteBtn{width: .9rem;background: #c20000;float: right;color: #fff;}
+.provienceBox ul li:hover{box-shadow: 0 0 .03rem #f3483e;color: #f3483e;}
+#textEnBox,#textJtBoxs{display: none;} */
+.keyboardBox {
+    position: fixed;
+    z-index: 10;
+    width: 7.5rem;
+    bottom: 0;
+    left: 0;
+}
+
+.provienceBox {
+    background: #D0D5D9;
+    padding: .07rem;
+    padding-bottom: .8rem;
+    border-radius: .05rem;
+    box-shadow: .1rem .1rem .2rem #9e9e9e;
+}
+
+.provienceBox ul li {
+    display: inline-block;
+    width: .8rem;
+    height: .8rem;
+    line-height: .8rem;
+    background: #fff;
+    margin: .06rem;
+    text-align: center;
+    cursor: pointer;
+    font-size: .3rem;
+    border-radius: .08rem;
+    box-shadow: .04rem .04rem .06rem #979797;
+}
+
+.provienceBox ul li.deleteBtn {
+    width: 1.7rem;
+    background: #c20000;
+    float: right;
+    color: #fff;
+}
+
+.provienceBox ul li:hover {
+    box-shadow: 0px 0px 3px #f3483e;
+    color: #f3483e;
+}
+
+#textEnBox,
+#textJtBoxs {
+    display: none;
+}

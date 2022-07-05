@@ -56,3 +56,7 @@ body{
     color: #3E3F41;
     margin: 0 auto;
 }
+
+.hide {
+    display: none!important;
+}
