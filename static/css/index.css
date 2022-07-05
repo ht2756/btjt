@@ -5,6 +5,14 @@
     position: fixed;
     top: 0;
     left: 0;
+    overflow: hidden;
+}
+.logo {
+    width: 2.59rem;
+    height: .41rem;
+    background: url(../images/index/logo.png) no-repeat;
+    background-size: 100% 100%;
+    margin: .13rem 0 0 2.45rem;
 }
 
 .content {
