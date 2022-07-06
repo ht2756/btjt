@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -22,48 +24,57 @@
         window['adaptive'].init();
     </script>
 </head>
+
 <body>
     <div class="main-box">
         <div class="header">车辆管理</div>
-        <div class="car-item">
-            <div class="car-num">京A123456</div>
-            <div class="car-type">燃气车</div>
-            <div class="car-status">已激活</div>
-            <div class="car-confirm">立即认证</div>
-        </div>
+        <div id="car-box"></div>
         <div class="car-tip">最多可添加3个车牌</div>
         <div id="addCar">+添加车牌</div>
     </div>
-<script src="static/js/jquery.min.js" ></script>
-<!-- <script src="static/js/echart.js" ></script> -->
-<!-- <script src="static/js/lazy.js" ></script> -->
-<script>
-    $.ajax({
-        type: 'GET',
-        url: 'http://w3test.parking520.com/User/BasicInfo?isTest=true',
-        dataType: 'json',
-        success: function(data) {
-            console.log(data)
-            
-            $.ajax({
-                type: 'GET',
-                url: 'http://w3test.parking520.com/User/PlateNumber',
-                dataType: 'json',
-                success: function(res) {
-                    if (res.isSuccess) {
-                        
-                    } else {
-                        // alert(res.message || res.data.remark)
-                    }
-                },
-                error: function(jqXHR) {
+    <script src="static/js/jquery.min.js"></script>
+    <!-- <script src="static/js/echart.js" ></script> -->
+    <!-- <script src="static/js/lazy.js" ></script> -->
+    <script>
+        $('#addCar').on('click', () => {
+            // $.ajax({
+            //     type: 'POST',
+            //     url: 'http://w3test.parking520.com/User/BindPlateNumber',
+            //     dataType: 'json',
+            //     data: {
+            //         "PlateNumbers": ["京NHZ085", "京KG1781"],
+            //         "Code": "1234"
+            //     },
+            //     success: function (res) {
+            //         if (res.isSuccess) {
 
-                },
-            })
-        },
-        error: function(jqXHR) {
-        },
-    })
-</script>
+            //         } else {
+            //             // alert(res.message || res.data.remark)
+            //         }
+            //     }
+            // })
+        })
+        $.ajax({
+            type: 'GET',
+            url: 'http://w3test.parking520.com/User/PlateNumber',
+            dataType: 'json',
+            success: function (res) {
+                if (res.isSuccess &&res.data.length) {
+                    res.data.forEach(item => {
+                        $('#car-box').append(`
+                        <div class="car-item">
+                            <div class="car-num">${item}</div>
+                            <div class="car-type">燃气车</div>
+                            <div class="car-status">已激活</div>
+                            <div class="car-confirm">立即认证</div>
+                        </div>`)
+                    })
+                } else {
+                    // alert(res.message)
+                }
+            }
+        })
+    </script>
 </body>
+
 </html>

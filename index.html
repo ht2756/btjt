@@ -34,7 +34,7 @@
             <div class="banner"></div>
             <div class="phone-box clearfloat">
                 <div class="avatar"></div>
-                <div class="phone">186******90</div>
+                <div class="phone" id="phone">186******90</div>
                 <div class="price-botton">月租缴费</div>
             </div>
             <div class="chepai">
@@ -187,6 +187,7 @@
 				success: function(res) {
                     if (res.isSuccess && res.data.phoneNumber) {
                         phoneNumber = res.data.phoneNumber
+                        $('#phone').text(phoneNumber)
                     } else {
                         // alert(res.message || res.data.remark)
                     }

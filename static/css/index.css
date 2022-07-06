@@ -24,7 +24,8 @@
 .banner {
     width: 7.02rem;
     height: 2.40rem;
-    background: red;
+    background: url(../images/index/banner.png) no-repeat;
+    background-size: 100%;
     border-radius: .27rem;
     margin: .33rem auto 0;
 }
@@ -213,19 +214,9 @@
     height: 2.4rem;
     margin: .27rem auto 0;
     border-radius: .27rem;
-    background: red;
+    background: url(../images/index/tuijian.png) no-repeat;
+    background-size: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .carcodeBox {
     width: 100vw;

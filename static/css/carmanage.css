@@ -12,8 +12,10 @@ body {
     font-weight: 800;
     color: #FFFFFF;
     position: fixed;
-    left: 2.55rem;
-    bottom: 1.33rem;
+    left: 0;
+    right: 0;
+    bottom: 1.23rem;
+    margin: auto;
 }
 .car-item {
     width: 7.02rem;

@@ -135,6 +135,7 @@ $('#chepaiSearch').on('click', () => {
     })
     if (carNum.length !== (isNew ? 8 : 7)) {
         alert("请填写完整车牌号");
+        return false
     }
     carNum = encodeURIComponent(carNum)
     window.location.href = `./parkdetail.html?carNum=${carNum}`

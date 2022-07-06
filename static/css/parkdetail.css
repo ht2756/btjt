@@ -1,0 +1,35 @@
+.detail-line {
+    width: 7.02rem;
+    height: .88rem;
+    line-height: .88rem;
+    margin: 0 auto;
+    font-size: .24rem;
+    color:#999;
+    border-bottom: .01rem solid #ccc;
+}
+.red {
+    color:#D0141E;
+}
+.detail-label {
+    float:left
+}
+.detail-info {
+    float:right
+}
+
+.pay-btn {
+    width: 7.02rem;
+    height: .67rem;
+    line-height: .67rem;
+    background: #D0141E;
+    border-radius: .21rem;
+    text-align: center;
+    font-size: .24rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 1.23rem;
+    margin: auto;
+}
