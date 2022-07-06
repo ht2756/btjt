@@ -1,37 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="static/css/common.css" />
-    <link rel="stylesheet" type="text/css" href="static/css/animate.css"/>
-    <script src="static/js/adv.js"></script>
-    <script>
-        // 设计图宽度
-        window['adaptive'].desinWidth = 750;
-        // body 字体大小 会将body字体大小设置为 baseFont / 100 + 'rem'  750的设计图一般设置为28,640的设计图一般设置为24
-        window['adaptive'].baseFont = 28;
-        // 显示最大宽度 可选
-        window['adaptive'].maxWidth = 750;
-        // 初始化
-        window['adaptive'].init();
-    </script>
-</head>
-<body>
-<div class=" ">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>中国搜索</title>
+		<link rel="stylesheet" type="text/css" href="static/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/user.css" />
+		
+		<script src="static/js/adv.js"></script>
+		<script>
+			// 设计图宽度
+			window['adaptive'].desinWidth = 750;
+			// body 字体大小 会将body字体大小设置为 baseFont / 100 + 'rem'  750的设计图一般设置为28,640的设计图一般设置为24
+			window['adaptive'].baseFont = 28;
+			// 显示最大宽度 可选
+			window['adaptive'].maxWidth = 750;
+			// 初始化
+			window['adaptive'].init();
+		</script>
+	</head>
+	<body>
+		<div class="main-box">
+			<div class="header">开发票</div>
+			<div class="navigation">
+				<div class="nav-name">
+					<p class="nav-namestep">Lean<span></span></p>
+					<p class="nav-nameedit">点击查看并编辑个人资料</p>
+				</div>
+				<div class="nav-img">
 
-</div>
-<div id="bottom-bar" class="clearfloat"></div>
-<script src="static/js/jquery.min.js" ></script>
-<script src="static/components/bottom.js" ></script>
-<!-- <script src="static/js/echart.js" ></script> -->
-<!-- <script src="static/js/lazy.js" ></script> -->
-<script>
+				</div>
+			</div>
 
-</script>
-</body>
+			<div class="main-content">
+				<div class="main-center">
+					<p class="main-invoice">
+						<span class="icon"></span>
+						<span class="main-desc">开发票</span>
+					</p>
+					<p class="main-card">
+						<span class="icon"></span>
+						<span class="main-desc">办月卡</span>
+					</p>
+					<p class="main-welfare">
+						<span class="icon"></span>
+						<span class="main-desc">领福利</span>
+					</p>
+				</div>
+				
+				<ul class="menu-list">
+					<li><span><i class="my-icon1"></i>会员中心</span><span class="menu-right"></span></li>
+					<li><span><i class="my-icon2"></i>停车记录</span><span class="menu-right"></span></li>
+					<li><span><i class="my-icon3"></i>我的爱车</span><span class="menu-right"></span></li>
+					<li><span><i class="my-icon4"></i>停车券</span><span class="menu-right"></span></li>
+					<li><span><i class="my-icon5"></i>车场查询</span><span class="menu-right"></span></li>
+					<li><span><i class="my-icon6"></i>帮助中心</span><span class="menu-right"></span></li>
+				</ul>
+				
+				<div class="advert"></div>
+			</div>
+
+		</div>
+		<div id="bottom-bar" class="clearfloat"></div>
+		<script src="static/js/jquery.min.js"></script>
+		<script src="static/components/bottom.js"></script>
+
+	</body>
 </html>

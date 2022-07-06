@@ -60,3 +60,12 @@ body{
 .hide {
     display: none!important;
 }
+
+.header{
+	color: #FFFFFF;
+	height: .34rem;
+	font-size: .34rem;
+	padding: .27rem 0;
+	background: #D0141E;
+	text-align: center;
+}

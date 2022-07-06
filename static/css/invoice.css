@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: PingFang SC;
+	/* max-width: 750px;
+    min-width: 300px;*/
+	margin: 0 auto;
+	width: 100vw;
+	background: #F7F7F7;
+}
+em,i{
+	font-style: normal;
+}
+
+.main-box {
+	font-family: PingFang SC;
+	margin-bottom: 1.76rem;
+}
+
+.header{
+	color: #FFFFFF;
+	height: .34rem;
+	font-size: .34rem;
+	padding: .27rem 0;
+	background: rgba(208, 17, 27, 0.99);
+	text-align: center;
+}
+.tabs{
+	display: flex;
+	color: #FFFFFF;
+	font-size: .24rem;
+	background: #D0111B ;
+	justify-content: space-around;
+	padding-top: .3rem;
+	padding-bottom: .15rem;
+	margin-top: -.1rem;
+}
+.tabs i{
+	display: none;
+}
+.tabs .active{
+	font-size: .32rem;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.tabs span{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.tabs .active i{
+	width: .43rem;
+	height: .07rem;
+	background: #FFFFFF;
+	border-radius: .03rem;
+	display: block;
+	margin-top: .1rem;
+}
+
+.can-invoList li{
+	width: 7.02rem;
+	height: 1.86rem;
+	background: #FFFFFF;
+	border-radius: 27px;
+	margin: .2rem auto 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.invo-nav{
+	margin-left: .34rem;
+	display: flex;
+	align-items: center;
+}
+.invo-time{
+	display: flex;
+	flex-direction: column;
+}
+.invo-time i{
+	font-size: .28rem;
+	color: #333333;
+	height: .21rem;
+	line-height: .21rem;
+	margin: .14rem 0;
+}
+.invo-money{
+	display: flex;
+	flex-direction: column;
+	margin-right: .34rem;
+}
+.invo-time .invo-carcode{
+	color: #999999;
+}
+.invo-pay{
+	font-size: .43rem;
+	color: #333333;
+}
+.invo-pay i{
+	font-size: .22rem;
+}
+.invo-mtit{
+	font-size: .22rem;
+	color: #999999;
+}
+.invo-check{
+	width: .37rem;
+	height: .37rem;
+	background: #FFFFFF;
+	border: 1px solid #D1D1D1;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: .33rem;
+}
