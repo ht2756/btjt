@@ -27,19 +27,19 @@
         <div class="header">订单详情</div>
         <div class="detail-line clearfloat">
             <span class="detail-label">车牌：</span>
-            <span class="detail-info red">京A88888</span>
+            <span class="detail-info red" id="palteNumber">京A88888</span>
         </div>
         <div class="detail-line clearfloat">
             <span class="detail-label">停放车场：</span>
-            <span class="detail-info">国瑞</span>
+            <span class="detail-info" id="parkName"></span>
         </div>
         <div class="detail-line clearfloat">
             <span class="detail-label">入场时间：</span>
-            <span class="detail-info">2022-7-6 14:12:23</span>
+            <span class="detail-info" id="inTime"></span>
         </div>
         <div class="detail-line clearfloat">
             <span class="detail-label">总计：</span>
-            <span class="detail-info red">￥12</span>
+            <span class="detail-info red" id="price"></span>
         </div>
         <div class="pay-btn">确认支付</div>
     </div>
@@ -50,23 +50,22 @@
 <script>
     var carNum = getQueryString('carNum')
     console.log(carNum)
-
     
-    // $.ajax({
-    //     type: 'GET',
-    //     url: 'http://w3test.parking520.com/User/BasicInfo?isTest=true',
-    //     dataType: 'json',
-    //     success: function(res) {
-    //         if (res.isSuccess && res.data.phoneNumber) {
-    //             phoneNumber = res.data.phoneNumber
-    //         } else {
-    //             // alert(res.message || res.data.remark)
-    //         }
-    //     },
-    //     error: function(jqXHR) {
-
-    //     },
-    // })
+    $.ajax({
+        type: 'GET',
+        url: `http://w3test.parking520.com/User/HourParkingFee?plateNumber=${carNum}`,
+        dataType: 'json',
+        success: function(res) {
+            if (res.isSuccess) {
+                $('#palteNumber').text(res.data.palteNumber)
+                $('#parkName').text(res.data.parkName)
+                $('#inTime').text(res.data.inTime)
+                $('#price').text(`￥${res.data.price}`)
+            } else {
+                // alert(res.message || res.data.remark)
+            }
+        }
+    })
 </script>
 </body>
 </html>
