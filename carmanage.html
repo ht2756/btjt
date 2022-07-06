@@ -38,7 +38,32 @@
 <!-- <script src="static/js/echart.js" ></script> -->
 <!-- <script src="static/js/lazy.js" ></script> -->
 <script>
-    
+    $.ajax({
+        type: 'GET',
+        url: 'http://w3test.parking520.com/User/BasicInfo?isTest=true',
+        dataType: 'json',
+        success: function(data) {
+            console.log(data)
+            
+            $.ajax({
+                type: 'GET',
+                url: 'http://w3test.parking520.com/User/PlateNumber',
+                dataType: 'json',
+                success: function(res) {
+                    if (res.isSuccess) {
+                        
+                    } else {
+                        // alert(res.message || res.data.remark)
+                    }
+                },
+                error: function(jqXHR) {
+
+                },
+            })
+        },
+        error: function(jqXHR) {
+        },
+    })
 </script>
 </body>
 </html>
