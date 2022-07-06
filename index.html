@@ -27,7 +27,9 @@
     </head>
 
     <body>
-        <div class="head"></div>
+        <div class="head">
+            <div class="logo"></div>
+        </div>
         <div class="content">
             <div class="banner"></div>
             <div class="phone-box clearfloat">
@@ -58,7 +60,7 @@
                     </div>
                     <div class="xinnengyuan" id="xinnengyuan">+新能源</div>
                 </div>
-                <div class="chepai-search">查询停车费</div>
+                <div class="chepai-search" id="chepaiSearch">查询停车费</div>
             </div>
             <div class="apply-box clearfloat">
                 <div class="apply-item i1">
@@ -178,7 +180,21 @@
         <!-- <script src="static/js/echart.js" ></script> -->
         <!-- <script src="static/js/lazy.js" ></script> -->
         <script>
+			$.ajax({
+				type: 'GET',
+				url: 'http://w3test.parking520.com/User/BasicInfo?isTest=true',
+				dataType: 'json',
+				success: function(res) {
+                    if (res.isSuccess && res.data.phoneNumber) {
+                        phoneNumber = res.data.phoneNumber
+                    } else {
+                        // alert(res.message || res.data.remark)
+                    }
+				},
+				error: function(jqXHR) {
 
+                },
+			})
         </script>
     </body>
 

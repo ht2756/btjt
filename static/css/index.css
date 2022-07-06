@@ -6,6 +6,13 @@
     top: 0;
     left: 0;
 }
+.logo {
+    width: 2.59rem;
+    height: .41rem;
+    margin: .13rem auto 0;
+    background: url(../images/index/logo.png) no-repeat;
+    background-size: 2.59rem .41rem;
+}
 
 .content {
     width: 100%;

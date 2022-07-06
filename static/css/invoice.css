@@ -15,19 +15,6 @@ em,i{
 	font-style: normal;
 }
 
-.main-box {
-	font-family: PingFang SC;
-	margin-bottom: 1.76rem;
-}
-
-.header{
-	color: #FFFFFF;
-	height: .34rem;
-	font-size: .34rem;
-	padding: .27rem 0;
-	background: rgba(208, 17, 27, 0.99);
-	text-align: center;
-}
 .tabs{
 	display: flex;
 	color: #FFFFFF;

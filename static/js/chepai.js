@@ -1,30 +1,29 @@
 
 $(document).on("click", "body", function () {
-    console.log(1)
     $("#textEnBox, #textJtBoxs").hide();
 });
 
 var isNew = false // 新能源
-//提交按钮，获取车牌号码
-function submms() {
-    var carNum = "";
-    $(".carLicenseMain ul li").each(function (index) {
-        var cartext = $(this).text();
-        console.log(index)
-        if (cartext == "" && index < 7) {
-            cartext = " ";
-        } else {
+// //提交按钮，获取车牌号码
+// function submms() {
+//     var carNum = "";
+//     $(".carLicenseMain ul li").each(function (index) {
+//         var cartext = $(this).text();
+//         console.log(index)
+//         if (cartext == "" && index < 7) {
+//             cartext = " ";
+//         } else {
 
-        }
-        carNum += cartext;
-    })
-    $("#carinput").val(carNum);
-    if (carNum.indexOf(" ") != -1) {
-        alert("请填写完整车牌号");
-    } else {
+//         }
+//         carNum += cartext;
+//     })
+//     $("#carinput").val(carNum);
+//     if (carNum.indexOf(" ") != -1) {
+//         alert("请填写完整车牌号");
+//     } else {
 
-    }
-}
+//     }
+// }
 
 
 
@@ -126,4 +125,17 @@ $('#xinnengyuan').on('click', (event) => {
     $('#chepaiUl li').removeClass("active");
     $('#xinengyuanLi').removeClass('hide').addClass("active");
     $("#textEnBox").show();
+})
+
+$('#chepaiSearch').on('click', () => {
+    var carNum = ''
+    $(".carLicenseMain ul li").each(function (index) {
+        var cartext = $(this).text();
+        carNum += cartext;
+    })
+    if (carNum.length !== (isNew ? 8 : 7)) {
+        alert("请填写完整车牌号");
+    }
+    carNum = encodeURIComponent(carNum)
+    window.location.href = `./parkdetail.html?carNum=${carNum}`
 })
