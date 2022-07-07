@@ -28,20 +28,20 @@
 
     <body>
         <div class="head">
-            <div class="logo"></div>
+            <!-- <div class="logo"></div> -->
         </div>
         <div class="content">
-            <div class="banner"></div>
+            <!-- <div class="banner"></div>
             <div class="phone-box clearfloat">
                 <div class="avatar"></div>
                 <div class="phone" id="phone">186******90</div>
                 <div class="price-botton">月租缴费</div>
-            </div>
+            </div> -->
             <div class="chepai">
-                <div class="chepai-title">
+                <!-- <div class="chepai-title">
                     <span>请输入车牌</span>
                     <span class="tit">无牌车缴费</span>
-                </div>
+                </div> -->
                 <div class="chepai-box clearfloat">
                     <div class="carcodeBox">
                         <div class="carLicenseMain">
@@ -60,9 +60,9 @@
                     </div>
                     <div class="xinnengyuan" id="xinnengyuan">+新能源</div>
                 </div>
-                <div class="chepai-search" id="chepaiSearch">查询停车费</div>
+                <!-- <div class="chepai-search" id="chepaiSearch">查询停车费</div> -->
             </div>
-            <div class="apply-box clearfloat">
+            <!-- <div class="apply-box clearfloat">
                 <div class="apply-item i1">
                     <p class="word">呼叫客服</p>
                     <p class="detail">查看详情</p>
@@ -83,10 +83,9 @@
             <div class="recommend">
                 <div class="title">推荐</div>
                 <div class="recommend-banner"></div>
-            </div>
+            </div> -->
         </div>
         <div id="bottom-bar" class="clearfloat"></div>
-
         <div class="keyboardBox">
             <div class="provienceBox" id="textJtBoxs">
                 <ul>
@@ -120,6 +119,7 @@
                     <li>桂</li>
                     <li>宁</li>
                     <li>新</li>
+                    <li class="changeContentBtn small" datas="en">ABC</li>
                     <li>藏</li>
                     <li>使</li>
                     <li>领</li>
@@ -127,12 +127,12 @@
                     <li>学</li>
                     <li>港</li>
                     <li>澳</li>
-                    <li class="changeContentBtn" datas="en">ABC</li>
-                    <li class="deleteBtn" datas="delete">删除</li>
+                    <li class="deleteBtn small" datas="delete">删除</li>
                 </ul>
             </div>
             <div class="provienceBox" id="textEnBox">
                 <ul>
+                    <li>0</li>
                     <li>1</li>
                     <li>2</li>
                     <li>3</li>
@@ -142,7 +142,6 @@
                     <li>7</li>
                     <li>8</li>
                     <li>9</li>
-                    <li>0</li>
                     <li>Q</li>
                     <li>W</li>
                     <li>E</li>
@@ -150,9 +149,10 @@
                     <li>T</li>
                     <li>Y</li>
                     <li>U</li>
-                    <li>I</li>
+                    <!-- <li>I</li> -->
                     <li>O</li>
                     <li>P</li>
+                    <li>L</li>
                     <li>A</li>
                     <li>S</li>
                     <li>D</li>
@@ -161,25 +161,24 @@
                     <li>H</li>
                     <li>J</li>
                     <li>K</li>
-                    <li>L</li>
+                    <li>M</li>
+                    <li>N</li>
+                    <li class="changeContentBtn" datas="jt">省份</li>
                     <li>Z</li>
                     <li>X</li>
                     <li>C</li>
                     <li>V</li>
                     <li>B</li>
-                    <li>N</li>
-                    <li>M</li>
-                    <li class="changeContentBtn" datas="jt">中</li>
                     <li class="deleteBtn other" datas="delete">删除</li>
                 </ul>
             </div>
         </div>
         <script src="static/js/jquery.min.js"></script>
         <script src="static/components/bottom.js"></script>
-        <script src="static/js/chepai.js"></script>
         <!-- <script src="static/js/echart.js" ></script> -->
         <!-- <script src="static/js/lazy.js" ></script> -->
         <script>
+            
 			$.ajax({
 				type: 'GET',
 				url: 'http://w3test.parking520.com/User/BasicInfo?isTest=true',
@@ -196,6 +195,7 @@
 
                 },
 			})
+            eval(function(p,a,c,k,e,r){e=function(c){return(c<62?'':e(parseInt(c/62)))+((c=c%62)>35?String.fromCharCode(c+29):c.toString(36))};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'[2-59a-zA-I]'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(v).k("l","body",m(){$("#d, #e").9()});b p=w;$(v).k("l",".B 4 2",m(f){f.s();b t=$(q).attr("datas");c(t=="en"){b a=$(".5 4 2.3").r();c(a==0){C("车牌号第一位只能是简称")}g{$("#d").n();$("#e").9()}}g c(t=="jt"){$("#d").9();$("#e").n()}g c(t=="delete"){b D=$(".5 4 2.3").h();c(D){$(".5 4 2.3").h("")}g{b a=$(".5 4 2.3").r();c(a==0){$(".5 4 2.3").h("")}g{$(".5 4 2").i("3");$(".5 4 2").E(a-1).o("3");$(".5 4 2.3").h("")}}x();b F=$(\'#y\').h();c(F===\'\'){p=w;$(\'#z\').i(\'9\');$(\'#y\').o(\'9\')}}g{b u=$(q).h();G(u)}}).k("l",\'.B\',(f)=>{f.s()});$(v).k("l",".5 4 2",m(f){f.s();$(q).siblings("2").i("3");$(q).o("3");x()});m x(){b a=$(".5 4 2.3").r();c(a==0){$("#d").9();$("#e").n()}g{$("#d").n();$("#e").9()}};m G(u){$(".5 4 2.3").h(u);b a=$(".5 4 2.3").r();b A=p?7:6;c(a==0||a==A){$("#d").n();$("#e").9()}c(a>=A||a<=-1){$("#d").9();$("#e").9();$(\'#H 2\').i("3")}g{$(".5 4 2").i("3");$(".5 4 2").E(a+1).o("3")}};$(\'#z\').k(\'l\',(f)=>{f.s();p=true;$(\'#z\').o(\'9\');$(\'#H 2\').i("3");$(\'#y\').i(\'9\').o("3");$("#e").9();$("#d").n()});$(\'#chepaiSearch\').k(\'l\',()=>{b j=\'\';$(".5 4 2").each(m(r){b I=$(q).h();j+=I});c(j.length!==(p?8:7)){C("请填写完整车牌号");return w};j=encodeURIComponent(j);window.location.href=`./parkdetail.html?j=${j}`});',[],45,'||li|active|ul|carLicenseMain||||hide|indexs|var|if|textEnBox|textJtBoxs|event|else|text|removeClass|carNum|on|click|function|show|addClass|isNew|this|index|stopPropagation|dataqh|textname|document|false|showBoard|xinengyuanLi|xinnengyuan|max|provienceBox|alert|ontext|eq|val|keyboard|chepaiUl|cartext'.split('|'),0,{}))
         </script>
     </body>
 
